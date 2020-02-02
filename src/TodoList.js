@@ -25,7 +25,7 @@ class TodoList extends Component {
     let todos = this.props.todos.map(val => (
       <Todo
         removeTodo={this.removeTodo.bind(this, val._id)}
-        task={val.task}
+        task={val.name}
         key={val._id}
       />
     ));
